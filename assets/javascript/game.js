@@ -29,16 +29,17 @@ if((userGuess === computerGuess)){
 
 
 
-if(userGuess != computerGuess){
+if(userGuess !== computerGuess){
     numGuess--
+    guessedChar.push(userGuess);
 
 }
 
 if(numGuess === 0){
     numGuess = 9;
     losses ++
-    
-
+    //CHECK THIS.
+   guessedChar.clear();
 
 }
 
